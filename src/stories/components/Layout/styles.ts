@@ -16,7 +16,7 @@ export const StyledBox = styled(Box)<{ theme: ThemeOptions }>`
   ${({ theme }) => `
     width: fit-content;
     padding: ${theme.spacing[200]}px;
-    border: 2px solid ${theme.colors.info};
+    border: 2px solid ${theme.colors.system.info};
     border-radius: 8px;
   `}
 `;
