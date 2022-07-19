@@ -19,7 +19,6 @@
     "amplitude-js": "^8.8.0",
     "axios": "^0.21.1",
     "bignumber.js": "^9.0.1",
-    "craco-alias": "^3.0.1",
     "date-fns": "^2.23.0",
     "env-cmd": "^10.1.0",
     "jwt-decode": "^3.1.2",
