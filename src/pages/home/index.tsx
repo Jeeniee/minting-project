@@ -11,7 +11,7 @@ const Page = () => {
       <Grid container>
         <Grid xs={12} item>
           <StyledSampleDiv theme={theme}>
-            <Typography variant="h4" color={theme.colors.gray.white}>
+            <Typography variant="h4" color={theme.colors.gray[1000]}>
               메인 홈 화면
             </Typography>
           </StyledSampleDiv>
