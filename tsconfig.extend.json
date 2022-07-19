@@ -1,17 +1,24 @@
+// index.ts만 있는 폴더에 대해서는 슬래쉬없이 별도로 alias를 정의해줘야함
 {
   "compilerOptions": {
     "baseUrl": "./src",
     "paths": {
-      "configs/*": ["./configs/*"],
+      "configs": ["./configs"],
+      "constants": ["./constants"],
       "constants/*": ["./constants/*"],
+      "hooks": ["./hooks"],
       "hooks/*": ["./hooks/*"],
       "networks/*": ["./networks/*"],
       "pages/*": ["./pages/*"],
-      "routes/*": ["./routes/*"],
+      "routes": ["./routes"],
+      "store": ["./store"],
       "store/*": ["./store/*"],
+      "assets/*": ["./assets/*"],
       "stories/assets/*": ["./stories/assets/*"],
       "stories/components/*": ["./stories/components/*"],
+      "types": ["./types"],
       "types/*": ["./types/*"],
+      "utils": ["./utils"],
       "utils/*": ["./utils/*"]
     }
   }
