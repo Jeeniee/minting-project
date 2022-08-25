@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { Box, ThemeOptions } from "@nwaycorp/nwayplay-designsystem-fe";
+import { Box, ThemeOptions } from "@nwaycorp/nway-designsystem-fe";
 
 export const StyledHeader = styled.header`
   position: fixed;
