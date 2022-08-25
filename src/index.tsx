@@ -5,7 +5,7 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
-import { ThemeProvider } from "@nwaycorp/nwayplay-designsystem-fe";
+import { ThemeProvider } from "@nwaycorp/nway-designsystem-fe";
 
 ReactDOM.render(
   <React.StrictMode>
