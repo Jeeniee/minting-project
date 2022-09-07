@@ -6,16 +6,23 @@ import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { RecoilRoot } from "recoil";
 import { ThemeProvider } from "@nwaycorp/nway-designsystem-fe";
+import { nWeb3 } from "@nwaycorp/nway-web3-react";
+
+function getLibrary(provider: any) {
+  return new nWeb3.ReactLibrary(provider);
+}
 
 ReactDOM.render(
   <React.StrictMode>
-    <RecoilRoot>
-      <ThemeProvider theme={{}}>
-        <BrowserRouter>
-          <App />
-        </BrowserRouter>
-      </ThemeProvider>
-    </RecoilRoot>
+    <nWeb3.ReactProvider getLibrary={getLibrary}>
+      <RecoilRoot>
+        <ThemeProvider theme={{}}>
+          <BrowserRouter>
+            <App />
+          </BrowserRouter>
+        </ThemeProvider>
+      </RecoilRoot>
+    </nWeb3.ReactProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );
